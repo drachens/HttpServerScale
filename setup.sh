@@ -1,10 +1,10 @@
 #!/bin/bash
 
-REPO_URL="https://github.com/drachens/ProyectoSyncBalanzasServer.git"
+REPO_URL="https://github.com/drachens/HttpServerScale.git"
 CLONE_DIR="/home/hprt/Escritorio/serverHttp/"
 PROGRAM_NAME="serverHttp.py"
 SETUP_FILENAME="requirements.txt"
-PROGRAM_DIR="ProyectoSyncBalanzasServer"
+PROGRAM_DIR="HttpServerScale"
 
 sudo apt-get update
 
@@ -19,7 +19,7 @@ mkdir -p "$CLONE_DIR"
 
 cd "$CLONE_DIR"
 
-git clone -b server "$REPO_URL" 
+git clone -b http-server "$REPO_URL" 
 
 cd "$PROGRAM_DIR" || { echo "No se pudo acceder al directorio."; exit 1; }
 
